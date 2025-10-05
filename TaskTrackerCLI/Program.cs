@@ -1,3 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// using System;
+// using System.IO;
 
-Console.WriteLine("Hello, World!");
+namespace TaskTrackerCLI
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            var command = InputHandler.Parse(args);
+            TaskHandler.AddTask(command);
+            Console.WriteLine(command.Description);
+        }
+    }   
+}
