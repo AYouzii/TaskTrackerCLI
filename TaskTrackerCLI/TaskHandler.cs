@@ -213,23 +213,23 @@ public static class TaskHandler
                           Task Tracker CLI
                           -----------------------
                           Usage:
-                            add <description>                     Add a new task with a description
-                            update <id> <description>             Update the description of an existing task
-                            delete <id1> [id2] [id3] ...          Delete one or more tasks by ID
-                            mark-todo <id1> [id2] [id3] ...       Mark one or more tasks as 'todo'
-                            mark-in-progress <id1> [id2] [id3] ... Mark one or more tasks as 'in-progress'
-                            mark-done <id1> [id2] [id3] ...       Mark one or more tasks as 'done'
-                            list [status]                         List tasks; optionally filter by status:
+                            TaskTrackerCLI add <description>                     Add a new task with a description
+                            TaskTrackerCLI update <id> <description>             Update the description of an existing task
+                            TaskTrackerCLI delete <id1> [id2] [id3] ...          Delete one or more tasks by ID
+                            TaskTrackerCLI mark-todo <id1> [id2] [id3] ...       Mark one or more tasks as 'todo'
+                            TaskTrackerCLI mark-in-progress <id1> [id2] [id3] ... Mark one or more tasks as 'in-progress'
+                            TaskTrackerCLI mark-done <id1> [id2] [id3] ...       Mark one or more tasks as 'done'
+                            TaskTrackerCLI list [status]                         List tasks; optionally filter by status:
                                                                   - 'todo', 'in-progress', or 'done'
                                                                   - If no status is provided, lists all tasks
                           
                           Examples:
-                            add "Buy groceries"
-                            update 3 "Buy milk and bread"
-                            delete 1 4 5
-                            mark-done 2 7
-                            list todo
-                            list
+                            TaskTrackerCLI add "Buy groceries"
+                            TaskTrackerCLI update 3 "Buy milk and bread"
+                            TaskTrackerCLI delete 1 4 5
+                            TaskTrackerCLI mark-done 2 7
+                            TaskTrackerCLI list todo
+                            TaskTrackerCLI list
 
                           """);
     }
